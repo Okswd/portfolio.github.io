@@ -182,7 +182,9 @@ body {
     width: 510px;
     height: 320px;
     border-radius: 20px;
-    background-image: no repeat;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .portfolio__link:hover {

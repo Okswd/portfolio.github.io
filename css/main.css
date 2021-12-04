@@ -185,6 +185,7 @@ body {
     background-repeat: no repeat;
     background-size: cover;
     background-position: center;
+    margin-bottom: 30px;
 }
 
 .portfolio__link:hover {

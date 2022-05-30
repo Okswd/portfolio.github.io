@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <meta name="description" content="Portfolio Ponomarenko Oksana">
+    <meta name="keywords" content="portfolio, web-developer, front-end developer, html coder, ui/ux, designer">
+    <!--OG Tags-->
+    <meta property="og:title" content="Portfolio">
+    <meta property="og:description" content="Portfolio Ponomarenko Oksana">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Portfolio">
+    <!--Styling-->
+    <meta name="theme-color" content="#ECFBFC">
+    <link rel="apple-touch-icon" href="./img/icon.png">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <!--CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 
@@ -18,24 +33,29 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__nav">
-                    <a class="header__nav-portfolio" href="#">мои работы</a>
-                    <a class="header__nav-mail" href="mailto:oksanawdesign@gmail.com" target="_blank">oksanawdesign@gmail.com</a>
-                    <a class="header__nav-phone" href="tel:380933833314" target="_blank">+38 (093) 383-33-14</a>
+                    <a class="header__nav-logo" href="#"></a>
                     <div class="header__nav-contacts">
+                        <a class="header__nav-mail" href="mailto:oksanawdesign@gmail.com" target="_blank"></a>
+                        <a class="header__nav-link-l" href="https://www.linkedin.com/in/oksana-ponomarenko-15882b157/" target="_blank"></a>
                         <a class="header__nav-link-i" href="https://www.instagram.com/oksana_ponomarenko_wd/" target="_blank"></a>
                         <a class="header__nav-link-f" href="https://www.facebook.com/profile.php?id=100008373153332" target="_blank"></a>
+                    </div>
+                    <div class="header__selection">
+                        <a class="header__selection-kind" href="#portfolio">LAYOUTS</a>
+                        <a class="header__selection-kind" href="#design">DESIGN</a>
                     </div>
                 </div>
                 <div class="header__offer">
                     <div class="header__content">
-                        <h1 class="header__content-title">Приветствую</h1>
-                        <p class="header__content-text">Я — Пономаренко Оксана — и здесь вы можете ознакомиться с моим портфолию</p>
-                        <a class="header__btn" href="https://t.me/Okswd" target="_blank">написать мне</a>
+                        <h1 class="header__content-title">Greetings</h1>
+                        <p class="header__content-text">I`m Oksana and here you can see my portfolio and contact me</p>
+                        <a class=" header__button" href="https://t.me/Okswd" target="_blank">write me
+                        </a>
                         <div class="header__aroww">
-                            <a class="header__arrow-link" href="#" id="arrow"></a>
+                            <a class="header__arrow-link" id="arrow" href="#arrow"></a>
                         </div>
                     </div>
-                    <img class="header__img" src="./img/photo.png" alt="#">
+                    <img class="header__img left" src="./img/photo.png" alt="#">
                 </div>
             </div>
         </div>
@@ -45,12 +65,12 @@
 
     <section class="portfolio" id="portfolio">
         <div class="container">
-            <h3 class="portfolio__title">мои работы</h3>
+            <h3 class="portfolio__title">layouts</h3>
             <div class="portfolio__inner">
                 <div class="portfolio__item">
                     <img class="portfolio__item-dot" src="./img/Vector.svg" alt="#">
                     <div class="portfolio__item-text">
-                        <h6 class="portfolio__info-title">Макет сайта межпланетных туров</h6>
+                        <h6 class="portfolio__info-title">Interplanetary tours website layout</h6>
                         <p class="portfolio__text">
                             HTML, CSS, JS (responsive)
                         </p>
@@ -61,7 +81,7 @@
                 <div class="portfolio__item">
                     <img class="portfolio__item-dot" src="./img/Vector.svg" alt="#">
                     <div class="portfolio__item-text">
-                        <h6 class="portfolio__info-title">Макет сайта туристических услуг</h6>
+                        <h6 class="portfolio__info-title">Africa travel services website mockup</h6>
                         <p class="portfolio__text">
                             HTML, CSS, JS (responsive)
                         </p>
@@ -71,7 +91,7 @@
                 <div class="portfolio__item">
                     <img class="portfolio__item-dot" src="./img/Vector.svg" alt="#">
                     <div class="portfolio__item-text">
-                        <h6 class="portfolio__info-title">Макет сайта юридических услуг</h6>
+                        <h6 class="portfolio__info-title">Legal services website layout</h6>
                         <p class="portfolio__text">
                             HTML, CSS (responsive)
                         </p>
@@ -81,7 +101,7 @@
                 <div class="portfolio__item">
                     <img class="portfolio__item-dot" src="./img/Vector.svg" alt="#">
                     <div class="portfolio__item-text">
-                        <h6 class="portfolio__info-title">Макет сайта доставки еды</h6>
+                        <h6 class="portfolio__info-title">Food delivery website mockup</h6>
                         <p class="portfolio__text">
                             HTML, CSS (responsive)
                         </p>
@@ -91,7 +111,7 @@
                 <div class="portfolio__item">
                     <img class="portfolio__item-dot" src="./img/Vector.svg" alt="#">
                     <div class="portfolio__item-text">
-                        <h6 class="portfolio__info-title">Макет сайта презентации телефона</h6>
+                        <h6 class="portfolio__info-title">Phone presentation site mockup</h6>
                         <p class="portfolio__text">
                             HTML, CSS (bootstrap, responsive)
                         </p>
@@ -111,7 +131,7 @@
                 <div class="portfolio__item">
                     <img class="portfolio__item-dot" src="./img/Vector.svg" alt="#">
                     <div class="portfolio__item-text">
-                        <h6 class="portfolio__info-title">Кредитный калькулятор</h6>
+                        <h6 class="portfolio__info-title">Credit calculator</h6>
                         <p class="portfolio__text">
                             HTML, CSS, JS
                         </p>
@@ -121,7 +141,7 @@
                 <div class="portfolio__item">
                     <img class="portfolio__item-dot" src="./img/Vector.svg" alt="#">
                     <div class="portfolio__item-text">
-                        <h6 class="portfolio__info-title">Слайдер горизонтальный</h6>
+                        <h6 class="portfolio__info-title">Slider horizontal</h6>
                         <p class="portfolio__text">
                             HTML, CSS, JS
                         </p>
@@ -131,7 +151,7 @@
                 <div class="portfolio__item">
                     <img class="portfolio__item-dot" src="./img/Vector.svg" alt="#">
                     <div class="portfolio__item-text">
-                        <h6 class="portfolio__info-title">Слайдер вертикальный</h6>
+                        <h6 class="portfolio__info-title">Slider vertical</h6>
                         <p class="portfolio__text">
                             HTML, CSS, JS
                         </p>
@@ -141,7 +161,7 @@
                 <div class="portfolio__item">
                     <img class="portfolio__item-dot" src="./img/Vector.svg" alt="#">
                     <div class="portfolio__item-text">
-                        <h6 class="portfolio__info-title">Цветная доска</h6>
+                        <h6 class="portfolio__info-title">Color board</h6>
                         <p class="portfolio__text">
                             HTML, CSS, JS
                         </p>
@@ -151,7 +171,7 @@
                 <div class="portfolio__item">
                     <img class="portfolio__item-dot" src="./img/Vector.svg" alt="#">
                     <div class="portfolio__item-text">
-                        <h6 class="portfolio__info-title">Игра "шарики</h6>
+                        <h6 class="portfolio__info-title">Game "balls"</h6>
                         <p class="portfolio__text">
                             HTML, CSS, JS
                         </p>
@@ -161,22 +181,118 @@
            </div>
         </div>
     </section>
+    
+    <!-- Design -->
 
-    <!-- Footer -->
-
-    <section class="footer">
+    <section class="design" id="design">
         <div class="container">
-            <div class="footer__nav">
-                <a class="footer__nav-mail" href="mailto:oksanawdesign@gmail.com" target="_blank">oksanawdesign@gmail.com</a>
-                <div class="footer__nav-contacts">
-                   <a class="footer__nav-link-i" href="https://www.instagram.com/oksana_ponomarenko_wd/" target="_blank"></a>
-                   <a class="footer__nav-link-f" href="https://www.facebook.com/profile.php?id=100008373153332" target="_blank"></a>
-                   <a class="footer__nav-link-t" href="https://t.me/Okswd" target="_blank"></a>
+            <h3 class="design__title">Design</h3>
+            <div class="slider">
+                <div class="slider__inner">
+                    <div class="slider__box">
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design1.jpg" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design2.jpg" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design3.jpg" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design4.jpg" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design5.jpg" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design6.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/takee.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/flowers.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/sport.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design7.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design8.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design9.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design10.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design11.jpg" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design12.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design13.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design14.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design15.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design16.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design17.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design18.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design19.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design20.png" alt="">
+                        </div>
+                        <div class="slider__box-item">
+                            <img class="slider__box-img" src="./img/design21.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <a class="footer__nav-phone" href="tel:380933833314" target="_blank">+38 (093) 383-33-14</a>
             </div>
         </div>
     </section>
-<script src="./js/main.js"></script>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__nav">
+                <div class="footer__nav-contacts">
+                    <a class="footer__nav-link-mail" href="mailto:oksanawdesign@gmail.com" target="_blank"></a>
+                    <a class="footer__nav-link-t" href="https://t.me/Okswd" target="_blank"></a>
+                    <a class="footer__nav-link-l" href="https://www.linkedin.com/in/oksana-ponomarenko-15882b157/"
+                        target="_blank"></a>
+                    <a class="footer__nav-link-i" href="https://www.instagram.com/oksana_ponomarenko_wd/" target="_blank"></a>
+                    <a class="footer__nav-link-f" href="https://www.facebook.com/profile.php?id=100008373153332"
+                        target="_blank"></a>
+                </div>
+                <a class="footer__nav-logo" href="#"></a>
+                <div class="footer__selection">
+                    <a class="footer__selection-kind" href="#portfolio">LAYOUTS</a>
+                    <a class="footer__selection-kind" href="#design">DESIGN</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
